@@ -1,7 +1,7 @@
 import React, {useContext} from 'react';
 import Nav from 'react-bootstrap/Nav'
 import Navbar from 'react-bootstrap/Navbar'
-import NavDropdown from 'react-bootstrap/NavdropDown'
+import {NavDropdown} from 'react-bootstrap'
 import { TodoGlobalProvider } from '../../context/TodoGlobalState';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { TodoGlobalContext } from '../../context/TodoGlobalState';
