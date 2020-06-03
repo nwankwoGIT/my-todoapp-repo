@@ -22,7 +22,7 @@
 	"prop-types": "^15.7.2",
 	"reactstrap": "^8.4.1",
     "redux": "^4.0.5",
-    "styled-components": "^5.1.1",
+    "styled-components": "^5.1.1"
   },
   "scripts": {
     "start": "node server/server.js",
