@@ -31,7 +31,7 @@ export const TodoActiveList = () => {
             <>     
              <TodoMenu/>           
             <div>
-            <h2 className="text-center">All Todo Contacts </h2>    
+            <h2 className="text-center">All Active Todos </h2>    
             <Table style={{ width: '100%', height: 'auto' }} rowKey='id' dataSource={activetodos}>
              <Column title="Student Name" dataIndex="studentname" key="studentname" />
             <Column title="Todo Item" dataIndex="todoItem" key="todoItem" />

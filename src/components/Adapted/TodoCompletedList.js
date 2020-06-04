@@ -32,7 +32,7 @@ export const TodoCompletedList = () => {
             <>    
             <TodoMenu/>            
             <div>
-            <h2 className="text-center">All Todo Contacts </h2>    
+            <h2 className="text-center">Completed Todos </h2>    
             <Table style={{ width: '100%', height: 'auto' }}  rowKey='id' dataSource={completedtodos}>
              <Column title="Student Name" dataIndex="studentname" key="studentname" />
             <Column title="Todo Item" dataIndex="todoItem" key="todoItem" />
