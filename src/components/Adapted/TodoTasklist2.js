@@ -88,3 +88,5 @@ export const TodoTasklist2 = () => {
       )}
 
  // replace start script in package json with this :  node server/server.js
+ // commit to github and then ...
+ // git push heroku master
