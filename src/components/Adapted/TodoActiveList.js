@@ -1,8 +1,6 @@
 import React, { Fragment, useState, useContext } from 'react';
 import TodoMenu from './TodoMenu'
 import { TodoGlobalContext } from '../../context/TodoGlobalState';
-//import { useHistory } from "react-router-dom";
-//import { Link } from 'react-router-dom';
 import 'antd/dist/antd.css'; // or 'antd/dist/antd.less'
 import {  Table, Space  } from 'antd';
 import { library } from '@fortawesome/fontawesome-svg-core'
@@ -21,10 +19,7 @@ their icon string names, "check-square" and "coffee", respectively.
 */
 
 export const TodoActiveList = () => {   
-    const [studentname, setStudentName] = useState('');
-    const [todoItem, setTodoItem] = useState('');
-    const [status, setStatus] = useState('');
-    const [iscomplete, setIsComplete] = useState(false);
+    
     const {todos } = useContext(TodoGlobalContext);  
     
     const activetodos = todos.filter ((todo) => {
@@ -35,7 +30,7 @@ export const TodoActiveList = () => {
         return (
             <>     
              <TodoMenu/>           
-            <div className="w-full max-w-sm container mt-20 mx-auto">
+            <div>
             <h2 className="text-center">All Todo Contacts </h2>    
             <Table style={{ width: '100%', height: 'auto' }} rowKey='id' dataSource={activetodos}>
              <Column title="Student Name" dataIndex="studentname" key="studentname" />

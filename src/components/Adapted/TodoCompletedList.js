@@ -21,10 +21,7 @@ their icon string names, "check-square" and "coffee", respectively.
 */
 
 export const TodoCompletedList = () => {   
-    const [studentname, setStudentName] = useState('');
-    const [todoItem, setTodoItem] = useState('');
-    const [status, setStatus] = useState('');
-    const [iscomplete, setIsComplete] = useState(false);
+    
     const {todos } = useContext(TodoGlobalContext);          
     const completedtodos = todos.filter ((todo) => {
         return todo.iscomplete === true;   
@@ -34,7 +31,7 @@ export const TodoCompletedList = () => {
         return (
             <>    
             <TodoMenu/>            
-            <div className="w-full max-w-sm container mt-20 mx-auto">
+            <div>
             <h2 className="text-center">All Todo Contacts </h2>    
             <Table style={{ width: '100%', height: 'auto' }}  rowKey='id' dataSource={completedtodos}>
              <Column title="Student Name" dataIndex="studentname" key="studentname" />
