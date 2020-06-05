@@ -15,8 +15,9 @@ export const ContactList = () => {
        
         return (
             <>    
-            <TodoMenu/>             
+                        
             <div>
+            <TodoMenu/>     
             <h2 className="text-center">List Of All Contacts </h2>             
             <Table style={{ width: '100%', height: 'auto' }} dataSource={contacts} rowKey={(record) => record.id} >               
                 <Column title="First Name" dataIndex="firstname" key="firstname" width='16vw'/>
