@@ -11,11 +11,11 @@ library.add(fab,  faCoffee,  faBan, faHome, faHighlighter, faTrashAlt, faSpinner
 const { Column } = Table;
 
 export const ContactList = () => {       
-    const {contacts, removeContact } = useContext(TodoGlobalContext);          
+    const {contacts, removeContact } = useContext(TodoGlobalContext);     
        
         return (
             <>   
-            <TodoMenu style={{ width: '100%', height: 'auto' }}/>               
+            <TodoMenu />               
             <div>                                             
             <h2 className="text-center">List Of All Contacts </h2>             
             <Table style={{ width: '100%', height: 'auto' }} dataSource={contacts} rowKey={(record) => record.id} >               
@@ -24,8 +24,7 @@ export const ContactList = () => {
                 <Column title="Email Address" dataIndex="email" key="email" width='16vw'/>
                 <Column title="Comments" dataIndex="comments" key="comments" width='16vw'/>                 
                 <Column
-                    title="Delete"
-                    key="action"
+                    title="Delete"                    
                     render={(text, record) => (
                     <Space size="middle">                    
                         <button onClick={() => removeContact(record.id)}>
@@ -46,4 +45,3 @@ export const ContactList = () => {
   }
 
   
-              

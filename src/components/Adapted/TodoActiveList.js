@@ -18,10 +18,8 @@ faCheckSquare and faCoffee: Adding each of these icons individually allows us to
 their icon string names, "check-square" and "coffee", respectively.
 */
 
-export const TodoActiveList = () => {   
-    
-    const {todos } = useContext(TodoGlobalContext);  
-    
+export const TodoActiveList = () => {     
+    const {todos } = useContext(TodoGlobalContext);      
     const activetodos = todos.filter ((todo) => {
          return todo.iscomplete === false;   
     })
