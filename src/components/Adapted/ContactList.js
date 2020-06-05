@@ -14,10 +14,10 @@ export const ContactList = () => {
     const {contacts, removeContact } = useContext(TodoGlobalContext);     
        
         return (
-            <>   
-            <TodoMenu />               
-            <div>                                             
-            <h2 className="text-center">List Of All Contacts </h2>             
+            <>                           
+            <div>   
+            <TodoMenu />                                               
+            <h1 className="text-center">List Of All Contacts </h1>             
             <Table style={{ width: '100%', height: 'auto' }} dataSource={contacts} rowKey={(record) => record.id} >               
                 <Column title="First Name" dataIndex="firstname" key="firstname" width='16vw'/>
                 <Column title="Last Name" dataIndex="lastname" key="lastname" width='16vw'/>

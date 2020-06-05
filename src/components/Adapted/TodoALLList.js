@@ -32,7 +32,7 @@ export const TodoALLList = () => {
             
             <div>
             <TodoMenu/>   
-            <h2 className="text-center">All Todo Contacts </h2>    
+            <h1 className="text-center">All Todo Contacts </h1>    
             <Table style={{ width: '100%', height: 'auto' }} rowKey='id' dataSource={todos}>
              <Column title="Student Name" dataIndex="studentname" key="studentname" />
             <Column title="Todo Item" dataIndex="todoItem" key="todoItem" />
@@ -54,4 +54,3 @@ export const TodoALLList = () => {
             
       );   
   }
-
