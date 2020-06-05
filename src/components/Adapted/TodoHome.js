@@ -6,10 +6,10 @@ import {ContactList} from './ContactList'
 
 export const TodoHome = () => {      
 return (  
-        <Fragment>            
+        <Fragment>    
+            <TodoMenu/>
             <div className="App">
-                 <div className="container mx-auto">
-                    <TodoMenu/>
+                 <div className="container mx-auto">                   
                     <h3 className="text-center  text-3xl mt-20 text-base leading-8 text-black font-bold tracking-wide uppercase">Using React Context API, Router and Hooks</h3>                    
                     <TodoHeading />
                     <TodoTasklist2 /> 
