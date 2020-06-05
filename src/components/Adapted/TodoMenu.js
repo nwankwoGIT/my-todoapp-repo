@@ -84,7 +84,7 @@ const NavTab = props => {
   };
 
   return (
-    <NavLink className="container" style={navStyle} activeStyle={activeStyle} to={props.to}>
+    <NavLink className="container=fluid" style={navStyle} activeStyle={activeStyle} to={props.to}>
       {props.label}
     </NavLink>
   );
