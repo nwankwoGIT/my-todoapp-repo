@@ -29,8 +29,9 @@ export const TodoALLList = () => {
     // to resolve key error in antd Table you must use rowKey ='id' in <Table rowKey='id' dataSource={todos}>
         return (
             <>     
-            <TodoMenu/>
+            
             <div>
+            <TodoMenu/>   
             <h2 className="text-center">All Todo Contacts </h2>    
             <Table style={{ width: '100%', height: 'auto' }} rowKey='id' dataSource={todos}>
              <Column title="Student Name" dataIndex="studentname" key="studentname" />
