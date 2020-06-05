@@ -22,8 +22,7 @@ export const ContactList = () => {
                 <Column title="First Name" dataIndex="firstname" key="firstname" width='16vw'/>
                 <Column title="Last Name" dataIndex="lastname" key="lastname" width='16vw'/>
                 <Column title="Email Address" dataIndex="email" key="email" width='16vw'/>
-                <Column title="Comments" dataIndex="comments" key="comments" width='16vw'/> 
-                <Column title="Comments" dataIndex="comments" key="comments" width='16vw'/>
+                <Column title="Comments" dataIndex="comments" key="comments" width='16vw'/>                 
                 <Column
                 title="Action"
                 key="action"
