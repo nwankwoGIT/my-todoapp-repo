@@ -5,17 +5,15 @@ import {NavDropdown} from 'react-bootstrap'
 import { TodoGlobalProvider } from '../../context/TodoGlobalState';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { TodoGlobalContext } from '../../context/TodoGlobalState';
-import { Route, NavLink,  Link, BrowserRouter, Redirect, Switch } from 'react-router-dom';
-import { faFileExcel } from '@fortawesome/free-solid-svg-icons';
+import { NavLink,  Link  } from 'react-router-dom';
 import { LinkContainer, NavItem} from 'react-router-bootstrap'
 
 const TodoMenu = () => {
-  const { todos, removeTodo, editTodo} = useContext(TodoGlobalContext);    
   
   return(
   <>
   <TodoGlobalProvider>
-  <Navbar collapseOnSelect expand="sm" bg="dark" variant="dark">
+  <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
     <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
     <Navbar.Collapse id="responsive-navbar-nav">

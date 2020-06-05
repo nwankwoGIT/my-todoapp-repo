@@ -14,8 +14,7 @@ export const ContactList = () => {
     const {contacts, removeContact } = useContext(TodoGlobalContext);          
        
         return (
-            <>    
-                        
+            <>                            
             <div>
             <TodoMenu/>     
             <h2 className="text-center">List Of All Contacts </h2>             
