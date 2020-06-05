@@ -11,25 +11,40 @@ export const TodoTasklist2 = () => {
     const { todos, removeTodo, editTodo,togglecompleteTodo} = useContext(TodoGlobalContext);         
     return (
         <Fragment>   
-
-        <Card title="">
-            <h4>All Todo Tasks </h4>
-           {todos.length > 0 ? <Fragment>            
-            {todos.map(todotask => ( 
-            <div key={todotask.id} className="site-card-wrapper">   
-            <Row gutter={16}>
+         <div>
+         <h1>All Todo Tasks </h1>
+         <Row gutter={10}>
               <Col span={8}>
-                <Card title="Student Name"  bordered={true}>
-                <p style={{textDecoration: todotask.iscomplete ? 'line-through' : 'none', color:"blue"}} > {todotask.studentname}</p>
+                <Card title="Student Name"  bordered={true}>             
                 </Card>
               </Col>
               <Col span={8}>
-                <Card title="Todo Item" bordered={true}>
+                <Card title="Student Todo Item"  bordered={true}>                 
+                </Card>
+              </Col>
+              <Col span={8}>
+                <Card title="Task Status"  bordered={true}>                 
+                </Card>  
+              </Col>
+         </Row>
+         </div>
+        <Card title="">           
+           {todos.length > 0 ? <Fragment>            
+            {todos.map(todotask => ( 
+            <div key={todotask.id} className="site-card-wrapper">   
+            <Row gutter={10}>
+              <Col span={8}>                
+                <Card  bordered={true}>
+                  <p style={{textDecoration: todotask.iscomplete ? 'line-through' : 'none', color:"blue"}} > {todotask.studentname}</p>
+                </Card>
+              </Col>
+              <Col span={8}>
+                <Card  bordered={true}>
                 <p style={{textDecoration: todotask.iscomplete ? 'line-through' : 'none',color:"blue" }} > {todotask.todoItem}</p>
                 </Card>
               </Col>
               <Col span={8}>
-                <Card title="Status" bordered={true}>
+                <Card bordered={true}>
                 <p style={{textDecoration: todotask.iscomplete ? 'line-through' : 'none', color:"blue"}}>{todotask.status}</p>
                 </Card>
               </Col>

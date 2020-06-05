@@ -7,7 +7,7 @@ export const TodoHeading = () => {
         <div>
             <div className="flex items-center mt-24 mb-10">
                 <div className="flex-grow text-left px-4 py-2 m-2">
-                    <h1>todos & Contacts</h1>                   
+                    <h1>todos, Contacts</h1>                   
                 </div>
                 <div className="flex-grow text-right px-4 py-2 m-2">
                     <Link to="/add">
