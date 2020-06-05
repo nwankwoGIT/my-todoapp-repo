@@ -2,10 +2,10 @@ import React, { Fragment, useState, useContext } from 'react';
 import { TodoGlobalContext } from '../../context/TodoGlobalState';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCoffee, faTrashAlt, faToggleOn, faCheckSquare} from '@fortawesome/free-solid-svg-icons'
+import { faToggleOn} from '@fortawesome/free-solid-svg-icons'
 
 import 'antd/dist/antd.css'; // or 'antd/dist/antd.less'
-import {Card, Divider,Col, Row} from 'antd'
+import {Card, Divider} from 'antd'
 
 export const TodoTasklist2 = () => { 
     const gridHeaderStyle = {       

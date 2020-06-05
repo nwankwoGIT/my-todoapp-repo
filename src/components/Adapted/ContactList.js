@@ -15,7 +15,7 @@ export const ContactList = () => {
        
         return (
             <>                            
-            <div>
+            <div style={{width:"100vw"}}>               
             <TodoMenu/>     
             <h2 className="text-center">List Of All Contacts </h2>             
             <Table style={{ width: '100%', height: 'auto' }} dataSource={contacts} rowKey={(record) => record.id} >               
@@ -24,7 +24,7 @@ export const ContactList = () => {
                 <Column title="Email Address" dataIndex="email" key="email" width='16vw'/>
                 <Column title="Comments" dataIndex="comments" key="comments" width='16vw'/>                 
                 <Column
-                title="Action"
+                title="Delete"
                 key="action"
                 render={(text, record) => (
                 <Space size="middle">                    
