@@ -25,8 +25,8 @@ The tecnologies used for the project are:
 
 * Flexbox CSS
 * Bootstrap 4
-* Javascript, React, React-Redux, React Router, Context API, Reducers, Hooks
-* Functional React Components used (100%)
+* Javascript, React, React-bootstrap, React-Redux, React Router, Context API, Reducers, Hooks
+* Functional React Components are used (100%)
 * HTML5
 * CSS
 * Boostrap Menu NAV BAR that persists across all pages
