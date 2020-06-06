@@ -1,3 +1,62 @@
+Project Owner:
+==============
+
+My name is Anthony S Nwankwo and this is the Readme.md file for my GitHub (also hosted on heroku),
+which is a markdown document. It contains the latest update to files in
+my project portfolio (Project 03)
+
+Overview/description of the project
+===================================
+
+
+The goal of this project is to build out a Todo and Contact App. I have tailored it to be used by a teacher to track tasks assigned to his/her students :
+
+* 	allows the teacher-instructor to enter the name of the student, the assigned task and toggle the status of completion
+* 	allows each record to be edited (for updates or unintentional mistakes)
+* 	allows the user to mark todo item as completed (by using a strike-out and without deleting the record)
+* 	allows user to PERMANENTLY delete any record 
+* 	user can display all completed todos or active todos or ALL todos
+*   user can toggle completion status for the home page WITHOUT navigating away to the edit form
+* 	ON A SEPARATE case, create a contact list, display it OR delete any contact from the display panel 
+
+
+The tecnologies used for the project are:
+
+
+* Flexbox CSS
+* Bootstrap 4
+* Javascript, React, React-Redux, React Router, Context API, Reducers, Hooks
+* Functional React Components used (100%)
+* HTML5
+* CSS
+* Boostrap Menu NAV BAR that persists across all pages
+
+
+
+Ideas for future improvement
+============================
+
+-	Improve on the aesthetics of display on the home page 	
+-	Incorporate tabs to display the COMPLETED, ACTIVE, ALL todo items   
+	 
+
+
+
+User Stories
+============
+
+-   As a user, I would like to be able to separately display COMPLETED, ACTIVE AND ALL todos.     
+
+-   As a user I would like to see the app hosted on heroku      
+
+- 	As a user, I would like to have all permanently deleted records to be preserved in another storage (for purposes of history) 
+
+-   Lastly, as a user, I would like to compliance with mobile first design - adapt to screen size changes without losing visibility
+    
+ 
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
@@ -27,42 +86,3 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
