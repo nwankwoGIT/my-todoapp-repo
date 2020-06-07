@@ -1,9 +1,10 @@
 import React, { createContext, useReducer } from 'react';
 import AppTodoReducer from './AppTodoReducer'
 const initialState = {
-                    todos: [{ id: 1, studentname: 'Cynthia John', todoItem: 'Finish My report', status: 'Pending', iscomplete: false}],	    
-                    contacts: [{ id: 1, firstname: 'Cynthia', lastname: 'Jones', email: 'cynthis@hotmail.com', comments: 'None'},
-                            { id: 2, firstname: 'Cynthia', lastname: 'Matthew', email: 'cynthis@hotmail.com', comments: 'None'}]          			  
+                    todos: [{ id: 1, studentname: 'Cynthia John', todoItem: 'Finish My report', status: 'Starting', iscomplete: false},
+                            { id: 2, studentname: 'Melony Weavers', todoItem: 'Edit and reformat my Clinical report', status: 'Starting', iscomplete: false}],	    
+                    contacts: [{ id: 1, firstname: 'James', lastname: 'Patrick', email: 'Patrick@hotmail.com', comments: 'None'},
+                            { id: 2, firstname: 'Veronica', lastname: 'Matthew', email: 'VERO@hotmail.com', comments: 'Currently on vacation'}]          			  
                      }
      
 export const TodoGlobalContext = createContext(initialState);
@@ -65,15 +66,7 @@ export const TodoGlobalProvider = ({ children }) => {
             payload: contacts
         });
     };
-    function toggleContact(id) {
-        let r = window.confirm("Do you want to toggle status of this contact (to active or inactive) ?");
-        if (r === true) {  
-        dispatch({
-            type: 'TOGGLE_CONTACT',
-            payload: id
-        });
-    }       
-    };
+    
     return (<TodoGlobalContext.Provider value={{
         todos: state.todos,        
         contacts: state.contacts,
