@@ -34,7 +34,7 @@ export const TodoGlobalProvider = ({ children }) => {
         });
     };
     function togglecompleteTodo(id) {
-        let r = window.confirm("Do you want to mark this task as complete ?");
+        let r = window.confirm("Do you want to toggle this task's completion status ?");
         if (r === true) { 
         dispatch({
             type: 'TOGGLE_COMPLETE_TODO',

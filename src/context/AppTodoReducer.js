@@ -30,7 +30,7 @@ export default (state, action) => {
             return {
                 ...state,
                 todos: state.todos.map(todo =>
-                    todo.id === action.payload ? { id: todo.id, studentname: todo.studentname, todoItem: todo.todoItem, status: "complete",iscomplete: !todo.iscomplete } : todo
+                    todo.id === action.payload ? { id: todo.id, studentname: todo.studentname, todoItem: todo.todoItem, status: todo.status,iscomplete: !todo.iscomplete } : todo
                   )                 
             };  
             case 'REMOVE_CONTACT':
