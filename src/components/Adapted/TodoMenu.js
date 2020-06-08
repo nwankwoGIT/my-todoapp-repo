@@ -1,12 +1,11 @@
-import React, {useContext} from 'react';
+import React from 'react';
 import Nav from 'react-bootstrap/Nav'
 import Navbar from 'react-bootstrap/Navbar'
 import {NavDropdown} from 'react-bootstrap'
 import { TodoGlobalProvider } from '../../context/TodoGlobalState';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { TodoGlobalContext } from '../../context/TodoGlobalState';
-import { NavLink,  Link  } from 'react-router-dom';
-import { LinkContainer, NavItem} from 'react-router-bootstrap'
+//import { NavLink,  Link  } from 'react-router-dom';
+import { LinkContainer} from 'react-router-bootstrap'
 
 const TodoMenu = () => {
   
@@ -66,27 +65,4 @@ const TodoMenu = () => {
   
   export default TodoMenu;
   
-const NavTab = props => {
-  var activeStyle = {
-    color: "green",
-    fontWeight: "bold",
-    
-  };
-
-  var navStyle = {    
-    display: "flex",
-    justifyContent: "center",
-    alignContent: "center",
-    flexDirection: "row",
-    flexWrap: "nowrap",
-    fontSize:"40px",
-    fontWeight:"bold"
-  };
-
-  return (
-    <NavLink className="container=fluid" style={navStyle} activeStyle={activeStyle} to={props.to}>
-      {props.label}
-    </NavLink>
-  );
-};
 

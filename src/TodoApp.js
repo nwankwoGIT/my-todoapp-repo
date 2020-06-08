@@ -12,9 +12,8 @@ import { TodoCompletedList } from './components/Adapted/TodoCompletedList';
 import { TodoGlobalProvider } from './context/TodoGlobalState';
 
 
-const TodoApp = () => {
-  return (
-        
+const TodoApp = () => { 
+  return (        
     <TodoGlobalProvider>
       <Switch>
         <Route path="/" component={TodoHome} exact />

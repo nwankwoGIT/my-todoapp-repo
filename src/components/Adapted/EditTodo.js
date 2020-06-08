@@ -10,9 +10,9 @@ export const EditTodo = (route) => {
     
     useEffect(() => {
         const todoId = currentTodoId;
-        const selectedTodo = todos.find(emp => emp.id === parseInt(todoId));
+        const selectedTodo = todos.find(todo => todo.id === parseInt(todoId));
         setSeletedTodo(selectedTodo);        
-    }, []);
+    }, [currentTodoId,todos]);
 
     const onSubmit = e => {
         e.preventDefault();

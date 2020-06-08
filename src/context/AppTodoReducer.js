@@ -1,4 +1,3 @@
-import { faSatelliteDish } from "@fortawesome/free-solid-svg-icons";
 export default (state, action) => {
     switch (action.type) {
         case 'REMOVE_TODO':
