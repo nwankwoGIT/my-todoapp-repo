@@ -56,7 +56,7 @@ export const EditTodo = (route) => {
                         <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" htmlFor="designation">
                         Todo Completion Status
                         </label>
-                        <label for="status-select">Choose an Option:</label>
+                        <label for="status-select">Choose Status:</label>
                         <select 
                             name="status" 
                             id="status-select" 
@@ -64,8 +64,8 @@ export const EditTodo = (route) => {
                             onChange={(e) => handleOnChange('status', e.target.value)} >    
                             <option value=".....">Choose ...</option>
                             <option value="started">Started</option>
-                            <option value="halfway">Halft Way</option>
-                            <option value="complete">Complete</option>    
+                            <option value="progressing">Progressing</option>
+                            <option value="completed">Completed</option>    
                         </select>                        
                     </div>
                     
